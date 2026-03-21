@@ -1,0 +1,218 @@
+[
+  {
+    "image": "https://example.com/images/app1.png",
+    "title": "TaskMaster Pro",
+    "companyName": "NextGen Soft Ltd.",
+    "id": 1,
+    "description": "A powerful task management app to organize daily work efficiently.",
+    "size": 45,
+    "reviews": 12540,
+    "ratingAvg": 4.5,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 540 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 6080 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app2.png",
+    "title": "PhotoSnap Editor",
+    "companyName": "PixelCraft Inc.",
+    "id": 2,
+    "description": "Edit photos like a pro with advanced filters and AI tools.",
+    "size": 78,
+    "reviews": 9820,
+    "ratingAvg": 4.3,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 4120 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app3.png",
+    "title": "FitTrack",
+    "companyName": "HealthSync",
+    "id": 3,
+    "description": "Track your fitness goals, workouts, and daily activities.",
+    "size": 60,
+    "reviews": 15600,
+    "ratingAvg": 4.7,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app4.png",
+    "title": "EduLearn",
+    "companyName": "SmartStudy Ltd.",
+    "id": 4,
+    "description": "Interactive learning platform for students and professionals.",
+    "size": 95,
+    "reviews": 8700,
+    "ratingAvg": 4.4,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 3850 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app5.png",
+    "title": "FoodieGo",
+    "companyName": "QuickBite",
+    "id": 5,
+    "description": "Order food from your favorite restaurants instantly.",
+    "size": 50,
+    "reviews": 22300,
+    "ratingAvg": 4.2,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 1800 },
+      { "name": "3 star", "count": 3500 },
+      { "name": "4 star", "count": 7200 },
+      { "name": "5 star", "count": 8600 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app6.png",
+    "title": "TravelMate",
+    "companyName": "WanderTech",
+    "id": 6,
+    "description": "Plan trips, book hotels, and explore destinations easily.",
+    "size": 88,
+    "reviews": 6400,
+    "ratingAvg": 4.1,
+    "downloads": 180000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 2100 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app7.png",
+    "title": "MoneyWise",
+    "companyName": "FinEdge",
+    "id": 7,
+    "description": "Track expenses and manage your personal finances smartly.",
+    "size": 40,
+    "reviews": 13400,
+    "ratingAvg": 4.6,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 7950 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app8.png",
+    "title": "ChatFlow",
+    "companyName": "ConnectHub",
+    "id": 8,
+    "description": "A fast and secure messaging app with group chat features.",
+    "size": 55,
+    "reviews": 31000,
+    "ratingAvg": 4.4,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2100 },
+      { "name": "3 star", "count": 4800 },
+      { "name": "4 star", "count": 10500 },
+      { "name": "5 star", "count": 12100 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app9.png",
+    "title": "WeatherNow",
+    "companyName": "SkyCast",
+    "id": 9,
+    "description": "Real-time weather updates and forecasts for your city.",
+    "size": 30,
+    "reviews": 7200,
+    "ratingAvg": 4.0,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 1900 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app10.png",
+    "title": "GameZone",
+    "companyName": "PlaySphere",
+    "id": 10,
+    "description": "Enjoy a collection of fun and addictive mobile games.",
+    "size": 120,
+    "reviews": 18500,
+    "ratingAvg": 4.3,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 6900 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app11.png",
+    "title": "NoteQuick",
+    "companyName": "WriteEase",
+    "id": 11,
+    "description": "Simple and fast note-taking app with cloud sync.",
+    "size": 25,
+    "reviews": 5400,
+    "ratingAvg": 4.5,
+    "downloads": 220000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 2130 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app12.png",
+    "title": "ShopEasy",
+    "companyName": "MarketHub",
+    "id": 12,
+    "description": "Shop online with great deals and fast delivery options.",
+    "size": 70,
+    "reviews": 27800,
+    "ratingAvg": 4.2,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 1400 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 4200 },
+      { "name": "4 star", "count": 9500 },
+      { "name": "5 star", "count": 10700 }
+    ]
+  }
+]
