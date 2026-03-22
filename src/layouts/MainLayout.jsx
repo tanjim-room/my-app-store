@@ -7,9 +7,9 @@ import Footer from '../components/Footer';
 import { Outlet } from 'react-router';
 
 const MainLayout = () => {
-    const appsPromise = fetch('apps.json').then(res => res.json());
+    
     return (
-        <div>
+        <div className='h-full'>
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>

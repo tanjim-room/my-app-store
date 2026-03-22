@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router';
+import { IoLogoGithub } from "react-icons/io5";
 
 const Navbar = () => {
     const navLinks = [
@@ -15,8 +16,8 @@ const Navbar = () => {
         }
     ]
     return (
-        <div>
-            <div className="navbar shadow-sm">
+        <div className=''>
+            <div className="navbar shadow-sm px-16">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -40,7 +41,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Contribute</a>
+                    <a className="btn bg-[#9F62F2] border-none"><IoLogoGithub size={20}></IoLogoGithub> Contribute</a>
                 </div>
             </div>
         </div>

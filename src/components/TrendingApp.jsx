@@ -7,7 +7,7 @@ const TrendingApp = ({ appsPromise }) => {
     const appsData = use(appsPromise);
 
     return (
-        <div>
+        <div className='px-8'>
             <Title title="Trending Apps"></Title>
             <SubTitle subTitle="Explore All Trending Apps on the Market developed by us"></SubTitle>
 

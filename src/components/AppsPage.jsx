@@ -7,7 +7,7 @@ import AppCard from './AppCard';
 const AppsPage = () => {
     const appsData = useLoaderData();
     return (
-        <div>
+        <div className='px-8'>
             <div className='py-16'>
                 <Title title="Our All Applications"></Title>
             <SubTitle subTitle="Explore All Trending Apps on the Market developed by us"></SubTitle>

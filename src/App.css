@@ -8,3 +8,9 @@
 body {
   color: black;
 }
+
+.active {
+  color: blueviolet;
+  font-weight: bold;
+  text-decoration: underline;
+}

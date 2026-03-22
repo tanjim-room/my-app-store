@@ -1,9 +1,9 @@
 import React from 'react';
 
-const SubTitle = () => {
+const SubTitle = ({subTitle}) => {
     return (
         <div>
-            <p className='text-center mt-2'>Explore All Trending Apps on the Market developed by us</p>
+            <p className='text-center mt-2'>{subTitle}</p>
         </div>
     );
 };
