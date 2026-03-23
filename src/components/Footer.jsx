@@ -51,6 +51,7 @@ const Footer = () => {
   
 </footer>
 
+
 <footer className="sm:footer-horizontal bg-neutral text-neutral-content items-center p-4">
     
   <div className="flex justify-center text-center">

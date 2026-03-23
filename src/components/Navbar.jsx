@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import { IoLogoGithub } from "react-icons/io5";
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
     ]
     return (
         <div className=''>
-            <div className="navbar shadow-sm px-16">
+            <div className="navbar shadow-sm px-4 md:px-8 lg:px-16 fixed top-0 left-0 w-full z-50 bg-white">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,7 +31,7 @@ const Navbar = () => {
                         }
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">NOA IO</a>
+                    <Link to="/" className="btn btn-ghost text-xl">NOA IO</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -41,7 +41,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn bg-[#9F62F2] border-none"><IoLogoGithub size={20}></IoLogoGithub> Contribute</a>
+                    <a className="btn bg-[#9F62F2] border-none" href='https://github.com/tanjim-room/' target='_blank'><IoLogoGithub size={20}></IoLogoGithub> Contribute</a>
                 </div>
             </div>
         </div>

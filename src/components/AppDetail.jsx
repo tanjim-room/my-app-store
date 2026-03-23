@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { MdOutlineFileDownload, MdOutlineStar, MdReviews } from 'react-icons/md';
 import { useLoaderData, useParams } from 'react-router';
 import Description from './Description';
+import { AppContext } from '../layouts/MainLayout';
 
 const AppDetail = () => {
+    const {install , setInstall, handleInstall} = useContext(AppContext);
     const appsData = useLoaderData();
     console.log(appsData);
     const { id } = useParams();
 
     const app = appsData.find(app => app.id === parseInt(id));
     const {description} = app
+    console.log(install)
     return (
         <div className='px-16 mt-8 h-[620px]'>
             <div className="card card-side shadow-sm">
@@ -41,7 +44,9 @@ const AppDetail = () => {
                     </div>
 
                     <div className="card-actions mt-2">
-                        <button className="btn border-none bg-[#00D390]">Install Now ({app?.size} MB)</button>
+                       {
+                        install.includes(app.id) ? <button className='btn bg-[#00D390] border-none text-gray-500' disabled>Installed</button> : <button onClick={() => handleInstall(app.id)} className='btn bg-[#00D390] border-none'>Install Now ({app?.size} MB)</button>
+                       }
                     </div>
                     
                 </div>

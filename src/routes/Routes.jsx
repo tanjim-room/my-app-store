@@ -26,7 +26,11 @@ export const routes = createBrowserRouter([
             },
             {
                 path: 'installation',
-                element: <InstallPage></InstallPage>
+                element: <InstallPage></InstallPage>,
+                loader: async () => {
+                    const res = await fetch('/apps.json'); // ✅ use / (root path)
+                    return res.json(); // ✅ convert to array
+                }
             },
             {
                 path: 'apps/:id',
