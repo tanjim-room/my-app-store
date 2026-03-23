@@ -10,7 +10,7 @@ const AppCard = ({ app }) => {
                 <div className="card  shadow-sm">
                     <figure>
                         <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            src={app.image} className='p-4 w-full h-48 object-cover'
                             alt="Shoes" />
                     </figure>
                     <div className="card-body bg-white">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router';
-import { IoLogoGithub } from "react-icons/io5";
+import { IoLogoGithub, IoLogoIonic } from "react-icons/io5";
 
 const Navbar = () => {
     const navLinks = [
@@ -31,7 +31,8 @@ const Navbar = () => {
                         }
                         </ul>
                     </div>
-                    <Link to="/" className="btn btn-ghost text-xl">NOA IO</Link>
+                    <Link to="/" className="btn btn-ghost text-xl"><IoLogoIonic className="text-blue-500" />
+                                <span>NOA IO</span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
