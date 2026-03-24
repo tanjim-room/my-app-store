@@ -34,7 +34,7 @@ const InstallPage = () => {
         <div className='mt-8 min-h-[680px]'>
             <Title title="Your Installed Apps"></Title>
             <SubTitle subTitle="Explore All Trending Apps on the Market developed by us"></SubTitle>
-            <div className='mx-20 flex justify-between items-center'>
+            <div className='mt-2 mx-20 flex flex-col md:flex-row justify-between items-center'>
                 <div>
                     <p className='text-xl font-semibold'>{sortedInstalledApps.length} Apps Found</p>
                 </div>

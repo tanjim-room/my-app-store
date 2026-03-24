@@ -48,7 +48,7 @@ const AppsPage = () => {
                 <Title title="Our All Applications"></Title>
             <SubTitle subTitle="Explore All Trending Apps on the Market developed by us"></SubTitle>
             </div>
-            <div className='px-8 flex justify-between'>
+            <div className='px-8 flex flex-col sm:flex-row justify-between'>
                 <div>
                     <h2 className='font-semibold text-lg'>({filteredApps.length}) Apps Found</h2>
                 </div>
@@ -68,7 +68,7 @@ const AppsPage = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-4 gap-4 p-8'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-8'>
                 {
                     isSearchLoading
                         ? <div className='col-span-4 flex justify-center py-10'><span className='loading loading-dots loading-lg text-[#9F62F2]'></span></div>

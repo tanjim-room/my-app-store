@@ -12,7 +12,7 @@ const TrendingApp = ({ appsPromise }) => {
             <Title title="Trending Apps"></Title>
             <SubTitle subTitle="Explore All Trending Apps on the Market developed by us"></SubTitle>
 
-           <div className='grid grid-cols-4 p-8 gap-4 mt-8'>
+           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-8 gap-4 mt-8'>
             {
                 appsData.slice(0,8).map((app, index) => <AppCard key={index} app={app}></AppCard>)
             }

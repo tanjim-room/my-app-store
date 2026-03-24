@@ -23,7 +23,7 @@ const AppDetail = () => {
     return (
         <div className='px-16 mt-8 min-h-[620px]'>
            
-            <div className="card card-side shadow-sm">
+            <div className="card card-side flex-col md:flex-row shadow-sm">
                 <figure>
                     <img
                         src={app?.image} className='p-4 w-72 h-72'
@@ -33,7 +33,7 @@ const AppDetail = () => {
                     <h2 className="card-title text-3xl">{app?.title}</h2>
                     <p>Developed by <span className='text-[#9F62F2] font-semibold'>{app?.companyName}</span></p>
                     <hr />
-                    <div className='flex gap-16 my-4'>
+                    <div className='flex flex-col sm:flex-row gap-4 sm:gap-16 my-4'>
                         <div>
                             <p className='text-[#00D390]'><MdOutlineFileDownload size={30} /></p>
                             <p>Downloads</p>
