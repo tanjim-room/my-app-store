@@ -39,7 +39,15 @@ export const routes = createBrowserRouter([
                     const res = await fetch('/apps.json'); // ✅ use / (root path)
                     return res.json(); // ✅ convert to array
                 }
+            },
+            {
+                path: '*',
+                element: <ErrorPage></ErrorPage>
             }
         ]
+    },
+    {
+        path: '*',
+        element: <ErrorPage></ErrorPage>
     }
 ])

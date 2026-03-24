@@ -9,7 +9,7 @@ const ErrorPage = () => {
     const navigate = useNavigate()
     return (
         <div className='h-full relative'>
-            <Navbar></Navbar>
+            
             <div className='flex justify-center mt-16'>
                 <img src="https://i.ibb.co.com/hq6rXvx/Untitled-design-3.png" alt="" />
                 
@@ -23,7 +23,7 @@ const ErrorPage = () => {
                     }} className='btn text-center bg-[#9F62F2] border-none'>Go Back</button>
                 </div>
             </div>
-            <Footer></Footer>
+            
             
         </div>
     );
