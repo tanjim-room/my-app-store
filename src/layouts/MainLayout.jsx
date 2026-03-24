@@ -1,29 +1,36 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Outlet, useNavigation } from 'react-router';
 import { toast, ToastContainer, Bounce } from 'react-toastify';
+import { addToInstallList, getInstallApps, uninstallFromList } from '../components/utilities/addToInstall';
 export const AppContext = createContext({})
 const MainLayout = () => {
     const [install, setInstall] = useState([]);
     const navigation = useNavigation();
     const isPageLoading = navigation.state === 'loading';
 
+    useEffect(() => {
+        setInstall(getInstallApps());
+    }, []);
 
     const handleInstall = (appId) => {
-        if (!install.includes(appId)) {
-            setInstall([...install, appId]);
-            toast.success('App installed successfully!');
-        }
-        else {
+        if (install.includes(appId)) {
             toast.error('App is already installed');
+            return;
         }
+
+        addToInstallList(appId);
+        setInstall((prevInstall) => [...prevInstall, appId]);
+        toast.success('App installed successfully!');
     }
+
     const handleUninstall = (appId) => {
-        const updatedInstall = install.filter(id => id !== appId);
-        setInstall(updatedInstall);
+        uninstallFromList(appId);
+        setInstall((prevInstall) => prevInstall.filter((id) => id !== appId));
         toast.success('App uninstalled successfully!');
     }
+
     const appInfo = {
         install,
         setInstall,

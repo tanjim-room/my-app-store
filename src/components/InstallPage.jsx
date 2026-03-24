@@ -7,10 +7,10 @@ import InstalledCard from './InstalledCard';
 
 const InstallPage = () => {
     const navigate = useNavigate();
-    const {install, handleInstall} = useContext(AppContext);
+    const {install} = useContext(AppContext);
     const allApps = useLoaderData();
     const [sortOrder, setSortOrder] = useState('');
-    const installedApps = allApps.filter(app => install.includes(app.id));
+    const installedApps = allApps.filter((app) => install.includes(app.id));
 
     const sortedInstalledApps = useMemo(() => {
         if (!sortOrder) {

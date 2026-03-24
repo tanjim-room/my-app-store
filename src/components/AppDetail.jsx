@@ -3,15 +3,12 @@ import { MdOutlineFileDownload, MdOutlineStar, MdReviews } from 'react-icons/md'
 import { useLoaderData, useParams } from 'react-router';
 import Description from './Description';
 import { AppContext } from '../layouts/MainLayout';
-import { ToastContainer } from 'react-toastify';
 import ReviewChart from './ReviewChart';
 
 const AppDetail = () => {
-    const { install, setInstall, handleInstall } = useContext(AppContext);
+    const { install, handleInstall } = useContext(AppContext);
     const appsData = useLoaderData();
-    console.log(appsData);
     const { id } = useParams();
-
     const app = appsData.find(app => app.id === parseInt(id));
     if (!app) {
         return (
@@ -23,7 +20,6 @@ const AppDetail = () => {
     }
 
     const { description } = app
-    console.log(install)
     return (
         <div className='px-16 mt-8 min-h-[620px]'>
            
